@@ -1,20 +1,26 @@
 <template>
   <div id="app">
     <Header />
-    <QuestionBox />
+    <b-container class="bv-example-row">
+      <b-row>
+        <b-col sm="6" offset="3">
+          <QuestionBox />
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import QuestionBox from "./components/QuestionBox";
+import Header from './components/Header';
+import QuestionBox from './components/QuestionBox';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Header,
-    QuestionBox
-  }
+    QuestionBox,
+  },
 };
 </script>
 
